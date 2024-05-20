@@ -37,13 +37,7 @@
             //COMBATE
             if(pc == jugador) {
                 alert("EMPATE")
-            } else if(jugador == 1 && pc ==3) {
-                alert("GANASTE")
-                triunfos = triunfos + 1
-            }else if(jugador == 2 && pc == 1) {
-                alert("GANASTE")
-                triunfos = triunfos + 1
-            }else if (jugador == 3 && pc == 2){
+            } else if((jugador == 1 && pc ==3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2)) {
                 alert("GANASTE")
                 triunfos = triunfos + 1
             } else {
@@ -52,7 +46,7 @@
             }
          }
 
-         alert("Ganaste " + triunfos + "veces. Perdiste " + perdidas + " veces.")
+         alert("Ganaste " + triunfos + " veces. Perdiste " + perdidas + " veces.")
         
     </script>
 </head>
